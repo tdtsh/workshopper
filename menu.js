@@ -1,4 +1,4 @@
-const tmenu        = require('terminal-menu')
+const tmenu        = require('@tdtsh/terminal-menu')
     , path         = require('path')
     , fs           = require('fs')
     , xtend        = require('xtend')
@@ -93,7 +93,7 @@ function showMenu (opts, i18n) {
   } else {
     process.stdin.setRawMode(true)
   }
-    
+
   process.stdin.resume()
 
   return emitter
